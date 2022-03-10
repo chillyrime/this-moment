@@ -48,6 +48,8 @@ const quotes = [
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
+/* JavaScript가 제공하는 Math함수를 사용해서 랜덤하게 quotes 중 하나를 가져오게 함
+참고로 round는 반올림, floor은 내림, ceil은 올림 */
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;
